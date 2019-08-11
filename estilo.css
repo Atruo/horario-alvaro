@@ -1,0 +1,80 @@
+body{
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Nunito', sans-serif;
+  background:
+  linear-gradient(135deg, rgba(76, 208, 143, 0.36) 0%, rgba(76, 208, 143, 0.36) 14.286%,rgba(67, 177, 138, 0.36) 14.286%, rgba(67, 177, 138, 0.36) 28.572%,rgba(57, 146, 133, 0.36) 28.572%, rgba(57, 146, 133, 0.36) 42.858%,rgba(48, 116, 128, 0.36) 42.858%, rgba(48, 116, 128, 0.36) 57.144%,rgba(38, 85, 123, 0.36) 57.144%, rgba(38, 85, 123, 0.36) 71.42999999999999%,rgba(29, 54, 118, 0.36) 71.43%, rgba(29, 54, 118, 0.36) 85.71600000000001%,rgba(19, 23, 113, 0.36) 85.716%, rgba(19, 23, 113, 0.36) 100.002%),linear-gradient(45deg, rgb(201, 54, 234) 0%, rgb(201, 54, 234) 16.667%,rgb(173, 57, 207) 16.667%, rgb(173, 57, 207) 33.334%,rgb(146, 60, 179) 33.334%, rgb(146, 60, 179) 50.001000000000005%,rgb(118, 62, 152) 50.001%, rgb(118, 62, 152) 66.668%,rgb(91, 65, 124) 66.668%, rgb(91, 65, 124) 83.33500000000001%,rgb(63, 68, 97) 83.335%, rgb(63, 68, 97) 100.002%)
+}
+
+.container{
+  text-align: center;
+  margin-top: 15em;
+}
+.super{
+  font-size: 100px;
+  color: white;
+}
+#titulo{
+  color: white;
+}
+#txt{
+  color: yellow;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: red;
+  animation: beat 1s infinite alternate;
+}
+@keyframes beat{
+	to { transform: scale(1.4); }
+}
+
+
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+}
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    color: #95a5a6;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 18px;
+    border:1px solid #ecf0f1;
+    background:#ecf0f1;
+    padding:5px;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+input[type="date"], focus {
+    color: #95a5a6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+#bot{
+  background-color: purple; /* Green */
+ border: none;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ border-radius: 40px;
+}
+#bot:hover{
+  cursor: pointer;
+  background-color: #d279d2;
+}

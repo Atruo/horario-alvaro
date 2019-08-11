@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Horario Alvaro</title>
+    <link rel="stylesheet" href="./estilo.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 class="super">Horario de Álvaro Caruana</h1>
+        <h1 id="titulo">Escoge un día: </h1>
+        <input type="date" name="dia" value=""><br><br>
+        <button id="bot" type="button" name="button" onclick="consultar();">Consultar</button>
+        <h1 style="display:none;" id = "txt">⚠️⚠️⚠️ NO DISPONIBLE por la Tarde-Noche ⚠️⚠️⚠️</h1>
+
+    </div>
+    <script type="text/javascript">
+      function consultar (){
+        var txt = document.getElementById("txt");
+        txt.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
